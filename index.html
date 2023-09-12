@@ -1,0 +1,370 @@
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" />
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="icon" href="assests/logo.png" type="image/icon type">
+<title>Chocolates Collections</title>
+
+  <style>
+
+ body{
+    background-color: #2f6296;
+ }
+  
+     
+  </style>
+</head>
+<body>
+       
+
+
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand"><h1>Chocolate Cart</h1></a>
+          <form class="d-flex">
+           
+            <button onclick="toggleContent()" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16" >
+                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+              </svg></button>
+          </form>
+        </div>
+      </nav>
+
+      <br>
+      <br>
+
+    <div class="container">
+
+      
+
+
+
+        <div class="row">
+          <div class="col">
+            
+            <div class="card" style="width: 18rem;">
+                <img src="assests/DairyMilk.jpg" class="card-img-top" alt="..." height="250vh">
+                <div class="card-body">
+
+                    <h3 class="float-right"><svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor" class="bi bi-currency-rupee" viewBox="0 0 16 16">
+                        <path d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4v1.06Z"/>
+                      </svg><span id="itemval">40.00 </span></h3>
+
+                     
+
+                  <h5 class="card-title"><b>Dairy Milk</b></h5>
+                  
+                  <a href="#" class="btn btn-primary">Add to Cart</a>
+
+                  <div>
+                    <ul class="pagination justify-content-end set_quantity">
+                    <li class="page-item">
+                    <button class="page-link " onclick="decreaseNumber('textbox','itemval',40)">
+                    <i class="fas fa-minus"></i> </button>
+                    </li>
+                    <li class="page-item"><input type="text" name="" class="page-link" value="0" id="textbox" >
+                    </li>
+                    <li class="page-item">
+                    <button class="page-link" onclick="increaseNumber('textbox','itemval',40)"> <i class="fas fa-plus"></i></button>
+                    </li>
+                    </ul>
+                    </div>
+
+
+                </div>
+              </div>
+
+          </div>
+          <div class="col">
+            
+            <div class="card" style="width: 18rem;">
+                <img src="assests/Bounty.jpg" class="card-img-top" alt="..." height="250vh">
+                <div class="card-body">
+                    
+                    <h3 class="float-right"><svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor" class="bi bi-currency-rupee" viewBox="0 0 16 16">
+                        <path d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4v1.06Z"/>
+                      </svg><span id="itemval">50.00 </span></h3>
+                  <h5 class="card-title"><b>Bounty</b></h5>
+                  <a href="#" class="btn btn-primary">Add to Cart</a>
+
+
+                  <div>
+                    <ul class="pagination justify-content-end set_quantity">
+                    <li class="page-item">
+                    <button class="page-link " onclick="decreaseNumber('textbox1','itemval1',50)">
+                    <i class="fas fa-minus"></i> </button>
+                    </li>
+                    <li class="page-item"><input type="text" name="" class="page-link" value="0" id="textbox1" >
+                    </li>
+                    <li class="page-item">
+                    <button class="page-link" onclick="increaseNumber('textbox1','itemval1',50)"> <i class="fas fa-plus"></i></button>
+                    </li>
+                    </ul>
+                    </div>
+                </div>
+              </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="assests/Amul.jpeg" class="card-img-top" alt="..." height="250vh">
+                <div class="card-body">
+                    <h3 class="float-right"><svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor" class="bi bi-currency-rupee" viewBox="0 0 16 16">
+                        <path d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4v1.06Z"/>
+                      </svg><span id="itemval">60.00 </span></h3>
+                  <h5 class="card-title"><b>Amul Milk Chocolate</b></h5>
+                   <a href="#" class="btn btn-primary">Add to Cart</a>
+
+                   <div>
+                    <ul class="pagination justify-content-end set_quantity">
+                    <li class="page-item">
+                    <button class="page-link " onclick="decreaseNumber('textbox2','itemval2',60)">
+                    <i class="fas fa-minus"></i> </button>
+                    </li>
+                    <li class="page-item"><input type="text" name="" class="page-link" value="0" id="textbox2" >
+                    </li>
+                    <li class="page-item">
+                    <button class="page-link" onclick="increaseNumber('textbox2','itemval2',60)"> <i class="fas fa-plus"></i></button>
+                    </li>
+                    </ul>
+                    </div>
+                </div>
+              </div>
+          </div>
+
+        
+        </div>
+
+       <br>
+       <br>
+
+        <div class="row">
+            <div class="col">
+              
+              <div class="card" style="width: 18rem;">
+                  <img src="assests/cadbury-5-star-chocolate.jpeg" class="card-img-top" alt="..." height="250vh">
+                  <div class="card-body">
+                    <h3 class="float-right"><svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor" class="bi bi-currency-rupee" viewBox="0 0 16 16">
+                        <path d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4v1.06Z"/>
+                      </svg><span id="itemval">70.00 </span></h3>
+                    <h5 class="card-title"><b>5 Star</b></h5>
+                    <a href="#" class="btn btn-primary">Add to Cart</a>
+
+                    <div>
+                        <ul class="pagination justify-content-end set_quantity">
+                        <li class="page-item">
+                        <button class="page-link " onclick="decreaseNumber('textbox3','itemval3',70)">
+                        <i class="fas fa-minus"></i> </button>
+                        </li>
+                        <li class="page-item"><input type="text" name="" class="page-link" value="0" id="textbox3" >
+                        </li>
+                        <li class="page-item">
+                        <button class="page-link" onclick="increaseNumber('textbox3','itemval3',70)"> <i class="fas fa-plus"></i></button>
+                        </li>
+                        </ul>
+                        </div>
+                  </div>
+                </div>
+  
+            </div>
+            <div class="col">
+              
+              <div class="card" style="width: 18rem;">
+             
+                  <img src="assests/FerreroRocher.jpg" class="card-img-top" alt="..." height="250vh">
+                  <div class="card-body">
+                    <h3 class="float-right"><svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor" class="bi bi-currency-rupee" viewBox="0 0 16 16">
+                        <path d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4v1.06Z"/>
+                      </svg><span id="itemval">100.00 </span></h3>
+                    <h5 class="card-title"><b>Ferrero Rocher</b></h5>
+                    <a href="#" class="btn btn-primary">Add to Cart</a>
+
+                    <div>
+                        <ul class="pagination justify-content-end set_quantity">
+                        <li class="page-item">
+                        <button class="page-link " onclick="decreaseNumber('textbox4','itemval4',100)">
+                        <i class="fas fa-minus"></i> </button>
+                        </li>
+                        <li class="page-item"><input type="text" name="" class="page-link" value="0" id="textbox4" >
+                        </li>
+                        <li class="page-item">
+                        <button class="page-link" onclick="increaseNumber('textbox4','itemval4',100)"> <i class="fas fa-plus"></i></button>
+                        </li>
+                        </ul>
+                        </div>
+                  </div>
+                </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 18rem;">
+                  <img src="assests/KISSES.jpg" class="card-img-top" alt="..." height="250vh">
+                  <div class="card-body">
+                    <h3 class="float-right"><svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor" class="bi bi-currency-rupee" viewBox="0 0 16 16">
+                        <path d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4v1.06Z"/>
+                      </svg><span id="itemval">140.00 </span></h3>
+                    <h5 class="card-title"><b>Kisses</b></h5>
+                 <a href="#" class="btn btn-primary">Add to Cart</a>
+
+                 <div>
+                    <ul class="pagination justify-content-end set_quantity">
+                    <li class="page-item">
+                    <button class="page-link " onclick="decreaseNumber('textbox5','itemval5',140)">
+                    <i class="fas fa-minus"></i> </button>
+                    </li>
+                    <li class="page-item"><input type="text" name="" class="page-link" value="0" id="textbox5" >
+                    </li>
+                    <li class="page-item">
+                    <button class="page-link" onclick="increaseNumber('textbox5','itemval5',140)"> <i class="fas fa-plus"></i></button>
+                    </li>
+                    </ul>
+                    </div>
+                  </div>
+                </div>
+            </div>
+  
+          
+          </div>
+
+   
+
+           <br>
+
+           <br>
+
+
+          <div class="row">
+            <div class="col">
+              
+              <div class="card" style="width: 18rem;">
+                  <img src="assests/Kitkat.jpg" class="card-img-top" alt="..." height="250vh">
+                  <div class="card-body">
+                    <h3 class="float-right"><svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor" class="bi bi-currency-rupee" viewBox="0 0 16 16">
+                        <path d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4v1.06Z"/>
+                      </svg><span id="itemval">240.00 </span></h3>
+                    <h5 class="card-title"><b>Kit Kat</b></h5>
+                    <a href="#" class="btn btn-primary">Add to Cart</a>
+
+                    <div>
+                        <ul class="pagination justify-content-end set_quantity">
+                        <li class="page-item">
+                        <button class="page-link " onclick="decreaseNumber('textbox6','itemval6',240)">
+                        <i class="fas fa-minus"></i> </button>
+                        </li>
+                        <li class="page-item"><input type="text" name="" class="page-link" value="0" id="textbox6" >
+                        </li>
+                        <li class="page-item">
+                        <button class="page-link" onclick="increaseNumber('textbox6','itemval6',240)"> <i class="fas fa-plus"></i></button>
+                        </li>
+                        </ul>
+                        </div>
+                  </div>
+                </div>
+  
+            </div>
+            <div class="col">
+              
+              <div class="card" style="width: 18rem;">
+                  <img src="assests/Nestle.jpg" class="card-img-top" alt="..." height="250vh">
+                  <div class="card-body">
+                    <h3 class="float-right"><svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor" class="bi bi-currency-rupee" viewBox="0 0 16 16">
+                        <path d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4v1.06Z"/>
+                      </svg><span id="itemval">500.00 </span></h3>
+                    <h5 class="card-title"> <b>Nestle</b> </h5>
+                    
+                    <a href="#" class="btn btn-primary">Add to Cart</a>
+
+                    <div>
+                        <ul class="pagination justify-content-end set_quantity">
+                        <li class="page-item">
+                        <button class="page-link " onclick="decreaseNumber('textbox7','itemval7',500)">
+                        <i class="fas fa-minus"></i> </button>
+                        </li>
+                        <li class="page-item"><input type="text" name="" class="page-link" value="0" id="textbox7" >
+                        </li>
+                        <li class="page-item">
+                        <button class="page-link" onclick="increaseNumber('textbox7','itemval7',500)"> <i class="fas fa-plus"></i></button>
+                        </li>
+                        </ul>
+                        </div>
+                  </div>
+                </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 18rem;">
+                  <img src="assests/Rum-and-Raisinjpg.jpg" class="card-img-top" alt="..." height="250vh">
+                  <div class="card-body">
+                    <h3 class="float-right"><svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor" class="bi bi-currency-rupee" viewBox="0 0 16 16">
+                        <path d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4v1.06Z"/>
+                      </svg><span id="itemval">600.00 </span></h3>
+                    <h5 class="card-title"> <b>Rum-and-Raisin </b></h5>
+                    
+                    <a href="#" class="btn btn-primary">Add to cart</a>
+                    <div>
+                        <ul class="pagination justify-content-end set_quantity">
+                        <li class="page-item">
+                        <button class="page-link " onclick="decreaseNumber('textbox8','itemval8',600)">
+                        <i class="fas fa-minus"></i> </button>
+                        </li>
+                        <li class="page-item"><input type="text" name="" class="page-link" value="0" id="textbox8" >
+                        </li>
+                        <li class="page-item">
+                        <button class="page-link" onclick="increaseNumber('textbox8','itemval8',600)"> <i class="fas fa-plus"></i></button>
+                        </li>
+                        </ul>
+                        </div>
+                  </div>
+                </div>
+            </div>
+  
+          
+          </div>
+
+
+      </div>
+
+
+      
+
+    <div class="col-md-12 col-lg-4 col-11 mx-auto mt-lg-0 mt-md-5" id="hiddenContent" style="display:none;">
+        <div class="right_side p-3 shadow bg-white">
+           
+             
+              
+        <h2 class="product_name mb-5">The Total Amount Of</h2>
+
+       
+
+        <div class="price_indiv d-flex justify-content-between">
+        <p>Product amount</p>
+        <p><svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor" class="bi bi-currency-rupee" viewBox="0 0 16 16">
+            <path d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4v1.06Z"/>
+          </svg><span id="product_total_amt">0.00</span></p>
+        </div>
+        <hr />
+        <div class="total-amt d-flex justify-content-between font-weight-bold">
+        <p>The total amount of Chocolates</p>
+        <p><svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor" class="bi bi-currency-rupee" viewBox="0 0 16 16">
+            <path d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4v1.06Z"/>
+          </svg><span id="total_cart_amt">0.00</span></p>
+        </div>
+        <button class="btn btn-primary text-uppercase">Checkout</button>
+        </div>
+        
+        </div>
+
+       
+
+
+
+<!-- Optional JavaScript -->
+<!-- Popper.js first, then Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
