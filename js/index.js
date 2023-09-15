@@ -63,12 +63,19 @@ total_cart_amt.innerHTML  = parseInt(product_total_amt.innerHTML);
 }
 }
 
-function toggleContent() {
+var c=document.getElementById('close');
+function toggleContent(event) {
+    event.preventDefault();
     var hiddenContent = document.getElementById("hiddenContent");
     if (hiddenContent.style.display === "none") {
         hiddenContent.style.display = "block";
     } else {
         hiddenContent.style.display = "none";
     }
+
+    c.addEventListener('click',()=>{
+
+        hiddenContent.style.display = "none";
+    });
 }
 
